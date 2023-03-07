@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +9,25 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body onload="pegaResultado()">
 
     <div id="titulo">
         <h1>Painel do Aluno</h1>
-        <img src="lapis.png" alt="">        
+        <img src="lapis.png" alt="">
     </div>
 
-    <form id="notas">
+    <section id="notas">
         <label>A média do aluno é:</label>
-        <input type="number" placeholder="Média">
+        <input id="resultado" type="number" placeholder="Média">
 
-        <label id="resultado">Portanto está Aprovado!</label>
+        <label>Portanto está <b><span id="status"></span></b> !</label>
 
-    </form>
+        <button onclick="voltar()">Voltar</button>
+
+    </section>
+
 </body>
+<script src="script.js"></script>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,25 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div id="titulo">
         <h1>Painel do Aluno</h1>
-        <img src="lapis.png" alt="">        
+        <img src="lapis.png" alt="">
     </div>
 
-    <form id="notas">
+    <section id="notas">
         <label>Digite a primeira nota do aluno:</label>
-        <input type="number" placeholder="Primeira nota...">
+        <input id="nota1" type="number" placeholder="Primeira nota...">
 
         <label>Digite a segunda nota do aluno:</label>
-        <input type="number" placeholder="Segunda nota...">
+        <input id="nota2" type="number" placeholder="Segunda nota...">
 
-        <button>Calcular</button>
-    </form>
+        <button onclick="calculaMedia()">Calcular</button>
+    </section>
+    
 </body>
+<script src="script.js"></script>
+
 </html>
